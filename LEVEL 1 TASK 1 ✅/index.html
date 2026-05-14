@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NEXORA — Digital Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- CUSTOM CURSOR -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <!-- LOADER -->
+  <div class="loader" id="loader">
+    <div class="loader__bar"></div>
+    <div class="loader__text">NEXORA</div>
+    <div class="loader__counter" id="loaderCounter">0</div>
+  </div>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <a href="#" class="nav__logo">NEXORA<span>®</span></a>
+    <div class="nav__center">
+      <a href="#about" class="nav__link">About</a>
+      <a href="#services" class="nav__link">Services</a>
+      <a href="#work" class="nav__link">Work</a>
+      <a href="#contact" class="nav__link">Contact</a>
+    </div>
+    <a href="#contact" class="nav__btn">
+      <span>Start a Project</span>
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1 7h12M7 1l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+    <button class="nav__burger" id="burger" aria-label="menu">
+      <span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about" class="mobile-menu__link">About</a>
+    <a href="#services" class="mobile-menu__link">Services</a>
+    <a href="#work" class="mobile-menu__link">Work</a>
+    <a href="#contact" class="mobile-menu__link">Contact</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero__noise"></div>
+
+    <!-- Floating orbs -->
+    <div class="orb orb--a"></div>
+    <div class="orb orb--b"></div>
+    <div class="orb orb--c"></div>
+
+    <div class="hero__top">
+      <div class="hero__tag">
+        <span class="hero__tag-dot"></span>
+        Available for projects · 2025
+      </div>
+      <div class="hero__scroll-hint">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><rect x="6.5" y="1" width="5" height="9" rx="2.5" stroke="currentColor" stroke-width="1.2"/><path d="M9 12v4M6 15l3 3 3-3" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Scroll
+      </div>
+    </div>
+
+    <div class="hero__main">
+      <div class="hero__eyebrow">Digital Agency — Est. 2017</div>
+      <h1 class="hero__title">
+        <span class="hero__line" data-text="We craft">We craft</span>
+        <span class="hero__line hero__line--italic"><em>digital</em></span>
+        <span class="hero__line" data-text="experiences">experiences</span>
+      </h1>
+      <div class="hero__bottom">
+        <p class="hero__desc">Award-winning design &amp; development studio. We build the kind of digital products people talk about.</p>
+        <div class="hero__ctas">
+          <a href="#work" class="btn-main">
+            <span>See Our Work</span>
+            <div class="btn-main__circle">→</div>
+          </a>
+          <a href="#about" class="btn-ghost">About Us</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__stats">
+      <div class="hero__stat">
+        <div class="hero__stat-num">200<sup>+</sup></div>
+        <div class="hero__stat-label">Projects Shipped</div>
+      </div>
+      <div class="hero__stat-divider"></div>
+      <div class="hero__stat">
+        <div class="hero__stat-num">98<sup>%</sup></div>
+        <div class="hero__stat-label">Client Satisfaction</div>
+      </div>
+      <div class="hero__stat-divider"></div>
+      <div class="hero__stat">
+        <div class="hero__stat-num">12</div>
+        <div class="hero__stat-label">Awards Won</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee">
+    <div class="marquee__track">
+      <span>UI Design</span><span class="sep">✦</span>
+      <span>Web Development</span><span class="sep">✦</span>
+      <span>Brand Identity</span><span class="sep">✦</span>
+      <span>Digital Strategy</span><span class="sep">✦</span>
+      <span>Motion Design</span><span class="sep">✦</span>
+      <span>E-Commerce</span><span class="sep">✦</span>
+      <span>UI Design</span><span class="sep">✦</span>
+      <span>Web Development</span><span class="sep">✦</span>
+      <span>Brand Identity</span><span class="sep">✦</span>
+      <span>Digital Strategy</span><span class="sep">✦</span>
+      <span>Motion Design</span><span class="sep">✦</span>
+      <span>E-Commerce</span><span class="sep">✦</span>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="wrap">
+      <div class="about__grid">
+        <div class="about__left">
+          <div class="label reveal">About Us</div>
+          <h2 class="about__title reveal">
+            We believe<br/><em>beautiful</em> design<br/>drives results.
+          </h2>
+          <div class="about__img-wrap reveal">
+            <div class="about__img">
+              <div class="about__img-overlay"></div>
+              <div class="about__img-content">
+                <div class="about__img-year">2017</div>
+                <div class="about__img-text">Est.</div>
+              </div>
+            </div>
+            <div class="about__img-badge">
+              <svg viewBox="0 0 100 100" class="about__img-badge-svg">
+                <path id="circlePath" d="M50,50 m-35,0 a35,35 0 1,1 70,0 a35,35 0 1,1 -70,0"/>
+                <text font-size="11.5" fill="currentColor" letter-spacing="3.5">
+                  <textPath href="#circlePath">AWARD WINNING STUDIO · SINCE 2017 · </textPath>
+                </text>
+              </svg>
+              <div class="about__img-badge-star">✦</div>
+            </div>
+          </div>
+        </div>
+        <div class="about__right">
+          <p class="about__p reveal">We are a team of 14 designers and developers obsessed with craft. From fintech to fashion, we've built digital products that have collectively served over 2 million users worldwide.</p>
+          <p class="about__p reveal">Our process is rigorous, our standards are high, and we don't ship anything we're not proud of. We partner with ambitious brands to turn complexity into clarity.</p>
+          <div class="about__cards reveal">
+            <div class="about__card">
+              <div class="about__card-num">14</div>
+              <div class="about__card-label">Team Members</div>
+            </div>
+            <div class="about__card">
+              <div class="about__card-num">50+</div>
+              <div class="about__card-label">Global Clients</div>
+            </div>
+            <div class="about__card">
+              <div class="about__card-num">2M+</div>
+              <div class="about__card-label">Users Reached</div>
+            </div>
+          </div>
+          <a href="#contact" class="btn-main reveal" style="margin-top:2.5rem">
+            <span>Work With Us</span>
+            <div class="btn-main__circle">→</div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="wrap">
+      <div class="services__header">
+        <div class="label reveal">Services</div>
+        <h2 class="services__title reveal">What we<br/><em>do best</em></h2>
+        <p class="services__sub reveal">Every service we offer is built around one goal — creating digital products that perform.</p>
+      </div>
+      <div class="services__list">
+        <div class="service reveal">
+          <div class="service__num">01</div>
+          <div class="service__body">
+            <h3 class="service__name">UI / UX Design</h3>
+            <p class="service__desc">Research-driven design that puts users first. We create interfaces that are intuitive, accessible, and genuinely delightful to use.</p>
+          </div>
+          <div class="service__tags">
+            <span>Figma</span><span>Prototyping</span><span>Research</span>
+          </div>
+          <div class="service__arrow">↗</div>
+        </div>
+        <div class="service reveal">
+          <div class="service__num">02</div>
+          <div class="service__body">
+            <h3 class="service__name">Web Development</h3>
+            <p class="service__desc">Blazing fast, accessible web applications built with modern frameworks. Performance isn't an afterthought — it's the foundation.</p>
+          </div>
+          <div class="service__tags">
+            <span>React</span><span>Next.js</span><span>Node.js</span>
+          </div>
+          <div class="service__arrow">↗</div>
+        </div>
+        <div class="service reveal">
+          <div class="service__num">03</div>
+          <div class="service__body">
+            <h3 class="service__name">Brand Identity</h3>
+            <p class="service__desc">Visual identities that are distinctive and durable. Logos, type systems, and color languages that make brands unmistakable.</p>
+          </div>
+          <div class="service__tags">
+            <span>Logo</span><span>Guidelines</span><span>Systems</span>
+          </div>
+          <div class="service__arrow">↗</div>
+        </div>
+        <div class="service reveal">
+          <div class="service__num">04</div>
+          <div class="service__body">
+            <h3 class="service__name">Digital Strategy</h3>
+            <p class="service__desc">Data-informed roadmaps that connect your digital presence to your business goals. Strategy that actually gets executed.</p>
+          </div>
+          <div class="service__tags">
+            <span>Analytics</span><span>SEO</span><span>Growth</span>
+          </div>
+          <div class="service__arrow">↗</div>
+        </div>
+        <div class="service reveal">
+          <div class="service__num">05</div>
+          <div class="service__body">
+            <h3 class="service__name">Motion & Animation</h3>
+            <p class="service__desc">Purposeful motion that guides attention and communicates personality. From subtle micro-interactions to full cinematic experiences.</p>
+          </div>
+          <div class="service__tags">
+            <span>GSAP</span><span>Lottie</span><span>CSS</span>
+          </div>
+          <div class="service__arrow">↗</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section class="work" id="work">
+    <div class="wrap">
+      <div class="work__header">
+        <div class="label reveal">Selected Work</div>
+        <h2 class="work__title reveal">Projects we're<br/><em>proud of</em></h2>
+      </div>
+      <div class="work__grid">
+        <a href="#" class="work__item work__item--wide reveal">
+          <div class="work__thumb" style="background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);">
+            <div class="work__thumb-inner">
+              <div class="work__mockup work__mockup--a">
+                <div class="wm-bar"><span></span><span></span><span></span></div>
+                <div class="wm-content"><div class="wm-line wm-line--lg"></div><div class="wm-line"></div><div class="wm-line wm-line--sm"></div><div class="wm-grid"><div class="wm-card"></div><div class="wm-card"></div><div class="wm-card"></div></div></div>
+              </div>
+            </div>
+          </div>
+          <div class="work__meta">
+            <div>
+              <span class="work__cat">Fintech · Web App · 2024</span>
+              <h3 class="work__name">Luminary Finance Dashboard</h3>
+            </div>
+            <div class="work__arrow">↗</div>
+          </div>
+        </a>
+        <a href="#" class="work__item reveal">
+          <div class="work__thumb" style="background: linear-gradient(135deg, #0d3320 0%, #145a32 60%, #1e8449 100%);">
+            <div class="work__thumb-inner">
+              <div class="work__mockup work__mockup--b">
+                <div class="wm-phone"><div class="wm-phone-notch"></div><div class="wm-phone-content"><div class="wm-circle"></div><div class="wm-line wm-line--c"></div><div class="wm-line"></div><div class="wm-btn"></div></div></div>
+              </div>
+            </div>
+          </div>
+          <div class="work__meta">
+            <div>
+              <span class="work__cat">Health · Mobile · 2024</span>
+              <h3 class="work__name">Vitale Health App</h3>
+            </div>
+            <div class="work__arrow">↗</div>
+          </div>
+        </a>
+        <a href="#" class="work__item reveal">
+          <div class="work__thumb" style="background: linear-gradient(135deg, #2d1515 0%, #7b1d1d 60%, #c0392b 100%);">
+            <div class="work__thumb-inner">
+              <div class="work__mockup work__mockup--c">
+                <div class="wm-logo">A</div>
+                <div class="wm-tagline"></div>
+                <div class="wm-swatch-row"><div class="wm-swatch" style="background:#c0392b"></div><div class="wm-swatch" style="background:#e74c3c"></div><div class="wm-swatch" style="background:#f9ebea"></div><div class="wm-swatch" style="background:#1a1a1a"></div></div>
+              </div>
+            </div>
+          </div>
+          <div class="work__meta">
+            <div>
+              <span class="work__cat">Brand Identity · 2023</span>
+              <h3 class="work__name">Artisan Co. Rebrand</h3>
+            </div>
+            <div class="work__arrow">↗</div>
+          </div>
+        </a>
+        <a href="#" class="work__item work__item--wide reveal">
+          <div class="work__thumb" style="background: linear-gradient(135deg, #071a2c 0%, #0d47a1 50%, #1565c0 100%);">
+            <div class="work__thumb-inner">
+              <div class="work__mockup work__mockup--d">
+                <div class="wm-bar"><span></span><span></span><span></span></div>
+                <div class="wm-hero-section"><div class="wm-big-line"></div><div class="wm-big-line wm-big-line--sm"></div><div class="wm-big-btn"></div></div>
+              </div>
+            </div>
+          </div>
+          <div class="work__meta">
+            <div>
+              <span class="work__cat">E-Commerce · Web · 2023</span>
+              <h3 class="work__name">Velocity Sportswear Store</h3>
+            </div>
+            <div class="work__arrow">↗</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIAL -->
+  <section class="testimonial">
+    <div class="wrap">
+      <div class="testimonial__inner reveal">
+        <div class="testimonial__left">
+          <div class="label">Client Love</div>
+          <div class="testimonial__avatar-row">
+            <div class="t-avatar t-avatar--a"></div>
+            <div class="t-avatar t-avatar--b"></div>
+            <div class="t-avatar t-avatar--c"></div>
+            <div class="t-avatar-more">+47</div>
+          </div>
+          <p class="testimonial__rating">★★★★★ <span>5.0 avg rating</span></p>
+        </div>
+        <div class="testimonial__right">
+          <div class="testimonial__quote-mark">"</div>
+          <p class="testimonial__text">Working with Nexora completely transformed how we think about our digital presence. They didn't just execute a brief — they challenged our assumptions, elevated our vision, and delivered a product that exceeded every metric we had.</p>
+          <div class="testimonial__author">
+            <div class="t-avatar t-avatar--a" style="width:48px;height:48px;flex-shrink:0"></div>
+            <div>
+              <strong>Sarah Chen</strong>
+              <span>CEO, Luminary Finance · New York</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="process">
+    <div class="wrap">
+      <div class="label reveal" style="text-align:center">Our Process</div>
+      <h2 class="process__title reveal">How we<br/><em>work</em></h2>
+      <div class="process__steps">
+        <div class="process__step reveal">
+          <div class="process__step-num">01</div>
+          <h3>Discover</h3>
+          <p>Deep research into your business, users, and competitors. We ask the uncomfortable questions before we touch a pixel.</p>
+        </div>
+        <div class="process__connector reveal"></div>
+        <div class="process__step reveal">
+          <div class="process__step-num">02</div>
+          <h3>Define</h3>
+          <p>We synthesize insights into clear strategy. Goals, metrics, and a shared vision before design begins.</p>
+        </div>
+        <div class="process__connector reveal"></div>
+        <div class="process__step reveal">
+          <div class="process__step-num">03</div>
+          <h3>Design</h3>
+          <p>From wireframes to high-fidelity interfaces. Iterative, collaborative, and ruthlessly focused on the user.</p>
+        </div>
+        <div class="process__connector reveal"></div>
+        <div class="process__step reveal">
+          <div class="process__step-num">04</div>
+          <h3>Deliver</h3>
+          <p>Pixel-perfect development, QA, and launch. Then we stick around for ongoing support and iteration.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <div class="contact__inner">
+        <div class="contact__left reveal">
+          <div class="label">Get In Touch</div>
+          <h2 class="contact__title">
+            Let's make<br/>something<br/><em>great.</em>
+          </h2>
+          <div class="contact__info">
+            <a href="mailto:hello@nexora.studio" class="contact__link">
+              <span class="contact__link-label">Email</span>
+              <span>hello@nexora.studio ↗</span>
+            </a>
+            <a href="tel:+15550001234" class="contact__link">
+              <span class="contact__link-label">Phone</span>
+              <span>+1 (555) 000-1234 ↗</span>
+            </a>
+            <div class="contact__link">
+              <span class="contact__link-label">Location</span>
+              <span>New York, NY / Remote Worldwide</span>
+            </div>
+          </div>
+          <div class="contact__socials">
+            <a href="#" class="contact__social">Twitter</a>
+            <a href="#" class="contact__social">LinkedIn</a>
+            <a href="#" class="contact__social">Dribbble</a>
+            <a href="#" class="contact__social">GitHub</a>
+          </div>
+        </div>
+        <div class="contact__right reveal">
+          <div class="contact__form">
+            <div class="field">
+              <label class="field__label">Your Name</label>
+              <input type="text" class="field__input" placeholder="John Smith"/>
+            </div>
+            <div class="field">
+              <label class="field__label">Email Address</label>
+              <input type="email" class="field__input" placeholder="john@company.com"/>
+            </div>
+            <div class="field">
+              <label class="field__label">Budget Range</label>
+              <select class="field__input">
+                <option value="" disabled selected>Select a range</option>
+                <option>$5k – $10k</option>
+                <option>$10k – $25k</option>
+                <option>$25k – $50k</option>
+                <option>$50k+</option>
+              </select>
+            </div>
+            <div class="field">
+              <label class="field__label">Tell us about your project</label>
+              <textarea class="field__input field__textarea" placeholder="We're looking to redesign our product..."></textarea>
+            </div>
+            <button class="btn-main btn-main--full" onclick="submitForm(event)">
+              <span>Send Message</span>
+              <div class="btn-main__circle">→</div>
+            </button>
+            <div class="form__success" id="formSuccess">
+              <span>✦</span> Message received — we'll be in touch within 24 hours.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer__top">
+        <div class="footer__logo">NEXORA<sup>®</sup></div>
+        <p class="footer__tagline">Crafting digital futures since 2017.</p>
+      </div>
+      <div class="footer__mid">
+        <div class="footer__col">
+          <h4>Company</h4>
+          <a href="#about">About</a>
+          <a href="#work">Work</a>
+          <a href="#contact">Careers</a>
+          <a href="#">Press</a>
+        </div>
+        <div class="footer__col">
+          <h4>Services</h4>
+          <a href="#services">UI/UX Design</a>
+          <a href="#services">Development</a>
+          <a href="#services">Branding</a>
+          <a href="#services">Strategy</a>
+        </div>
+        <div class="footer__col">
+          <h4>Connect</h4>
+          <a href="#">Twitter</a>
+          <a href="#">LinkedIn</a>
+          <a href="#">Dribbble</a>
+          <a href="#">GitHub</a>
+        </div>
+        <div class="footer__col footer__col--cta">
+          <div class="footer__cta-label">Have a project?</div>
+          <a href="#contact" class="footer__cta-link">Let's talk →</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© 2025 Nexora Studio. All rights reserved.</p>
+        <p class="footer__credit">OIB-SIP Internship · Level 1 Task 1 · HTML + CSS</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
