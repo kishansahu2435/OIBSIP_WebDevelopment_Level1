@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Temperature Converter | Kishan Sahu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="wrap">
+    <section class="card">
+      <div class="badge">Oasis Infobyte • Level 1 Task 3</div>
+      <h1>Temperature Converter</h1>
+      <p class="subtitle">Convert Celsius, Fahrenheit, or Kelvin with a clean and interactive UI.</p>
+
+      <div class="converter">
+        <label for="tempInput">Enter Temperature</label>
+        <input id="tempInput" type="number" placeholder="Example: 32" />
+
+        <label for="scale">Convert From</label>
+        <select id="scale">
+          <option value="c">Celsius</option>
+          <option value="f">Fahrenheit</option>
+          <option value="k">Kelvin</option>
+        </select>
+
+        <button id="convertBtn">Convert</button>
+
+        <div class="result-box">
+          <p class="result-label">Converted Temperature</p>
+          <h2 id="result">--</h2>
+          <p id="message">Enter a value and click convert.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
